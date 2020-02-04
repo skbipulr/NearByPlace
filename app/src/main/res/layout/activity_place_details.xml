@@ -20,16 +20,13 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="189dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginTop="5dp"
                 android:adjustViewBounds="true"
                 android:maxHeight="190dp"
                 android:maxWidth="400dp"
-                android:scaleType="fitCenter" />
+                android:scaleType="centerCrop" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -148,8 +145,10 @@
                 android:layout_height="50dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#359ab9"
+                android:background="@drawable/background_enabled"
                 android:gravity="center"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -169,8 +168,10 @@
                 android:layout_height="50dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:background="#359ab9"
+                android:background="@drawable/background_enabled"
                 android:gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:orientation="horizontal">
 
                 <TextView

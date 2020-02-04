@@ -56,7 +56,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:background="@color/colorPrimary"
+                        android:background="@drawable/backgroud_disable"
                         android:orientation="horizontal">
 
 
@@ -68,7 +68,7 @@
                             android:layout_weight="1"
                             android:padding="12dp"
                             android:src="@drawable/ic_search"
-                            android:tint="#fff" />
+                            android:tint="#000" />
 
                     </LinearLayout>
 

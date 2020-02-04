@@ -45,6 +45,7 @@ public class LocationFragment extends Fragment {
 
     ProgressDialog progressDialog;
     private TextView textViewAddress;
+
     private TextView textViewCity;
     private TextView textViewPostalCode;
     private TextView textViewLongitude;
@@ -69,6 +70,8 @@ public class LocationFragment extends Fragment {
         textViewCountry = view.findViewById(R.id.textViewCountry);
         textViewDivision = view.findViewById(R.id.textViewDivision);
         textViewPostalCode = view.findViewById(R.id.postalCode);
+
+        textViewAddress.setSelected(true);
 
         locationService();
 

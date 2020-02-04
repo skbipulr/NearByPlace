@@ -14,7 +14,47 @@
             android:gravity="center"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+
+                        android:id="@+id/address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="4dp"
+                        android:maxLines="1"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:text="Address"
+                        android:background="@drawable/backgroud_disable"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
             <androidx.cardview.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp">
@@ -24,55 +64,31 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp">
+                    android:paddingBottom="16dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/colorPrimary"
-                            android:orientation="vertical">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:paddingBottom="5dp"
-                                android:paddingTop="5dp">
-
-                                <TextView
-                                    android:id="@+id/address"
-                                    android:layout_width="0dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="2"
-                                    android:padding="5dp"
-                                    android:text="Address"
-                                    android:textColor="#fff"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                            </LinearLayout>
-
-                        </LinearLayout>
 
                         <LinearLayout
+                            android:layout_marginTop="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp">
+                            android:background="#fefefe"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:text="City"
-                                android:textSize="14sp" />
+                                android:text="City               ---->"
+                                android:textSize="14sp"
+                                android:textColor="@color/text_color"/>
+
 
                             <TextView
                                 android:id="@+id/city"
@@ -82,7 +98,7 @@
                                 android:padding="5dp"
                                 android:text=""
                                 android:textSize="14sp"
-                                android:textStyle="bold" />
+                                />
 
                         </LinearLayout>
 
@@ -91,22 +107,24 @@
                             android:layout_height="1dp"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="5dp"
-                            android:background="#ccc" />
+                            android:background="#65CCCCCC" />
 
                         <LinearLayout
+                            android:layout_marginTop="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp">
+                            android:background="#fefefe"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:text="Postal Code: "
-                                android:textSize="14sp" />
+                                android:text="Postal Code---->"
+                                android:textSize="14sp"
+                                android:textColor="@color/text_color"/>
+
 
                             <TextView
                                 android:id="@+id/postalCode"
@@ -116,7 +134,7 @@
                                 android:padding="5dp"
                                 android:text=""
                                 android:textSize="14sp"
-                                android:textStyle="bold" />
+                                />
 
                         </LinearLayout>
 
@@ -125,23 +143,24 @@
                             android:layout_height="1dp"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="5dp"
-                            android:background="#ccc" />
+                            android:background="#65CCCCCC" />
 
                         <LinearLayout
+                            android:layout_marginTop="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="#fefefe"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp">
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:text="Division:"
-                                android:textSize="14sp" />
+                                android:text="Division        ---->"
+                                android:textSize="14sp"
+                                android:textColor="@color/text_color"/>
+
                             
                             <TextView
                                 android:id="@+id/textViewDivision"
@@ -151,7 +170,7 @@
                                 android:padding="5dp"
                                 android:text=""
                                 android:textSize="14sp"
-                                android:textStyle="bold" />
+                                 />
 
                         </LinearLayout>
 
@@ -160,22 +179,24 @@
                             android:layout_height="1dp"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="5dp"
-                            android:background="#ccc" />
+                            android:background="#65CCCCCC" />
 
                         <LinearLayout
+                            android:layout_marginTop="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp">
+                            android:background="#fefefe"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal">
 
-                            <TextView
+
+                        <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:text="Country:"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:textColor="@color/text_color"
+                                android:text="Country       ---->" />
 
 
                             <TextView
@@ -186,7 +207,7 @@
                                 android:padding="5dp"
                                 android:text=""
                                 android:textSize="14sp"
-                                android:textStyle="bold" />
+                                />
 
                         </LinearLayout>
 
@@ -195,24 +216,26 @@
                             android:layout_height="1dp"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="5dp"
-                            android:background="#ccc" />
+                            android:background="#65CCCCCC" />
 
 
                         <LinearLayout
+                            android:layout_marginTop="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="#fefefe"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp">
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal">
+
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:text="Country Code:"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:textColor="@color/text_color"
+                                android:text="Country Code-->"
+                                />
 
                             <TextView
                                 android:id="@+id/textViewCountryCode"
@@ -222,7 +245,7 @@
                                 android:padding="5dp"
                                 android:text=""
                                 android:textSize="14sp"
-                                android:textStyle="bold" />
+                                 />
 
                         </LinearLayout>
 
@@ -231,22 +254,23 @@
                             android:layout_height="1dp"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="5dp"
-                            android:background="#ccc" />
+                            android:background="#65CCCCCC" />
 
                         <LinearLayout
+                            android:layout_marginTop="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp">
+                            android:background="#fefefe"
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:text="Latitude:"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:textColor="@color/text_color"
+                                android:text="Latitude       ---->" />
 
 
                             <TextView
@@ -257,7 +281,7 @@
                                 android:padding="5dp"
                                 android:text=""
                                 android:textSize="14sp"
-                                android:textStyle="bold" />
+                                />
 
                         </LinearLayout>
 
@@ -266,23 +290,23 @@
                             android:layout_height="1dp"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="5dp"
-                            android:background="#ccc" />
+                            android:background="#65CCCCCC" />
 
                         <LinearLayout
+                            android:layout_marginTop="6dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="#fefefe"
-                            android:orientation="horizontal"
-                            android:paddingBottom="5dp"
-                            android:paddingTop="5dp">
+                            android:layout_marginLeft="8dp"
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:padding="5dp"
-                                android:text="Longitude:"
-                                android:textSize="14sp" />
+                                android:text="Longitude    ---->"
+                                android:textSize="14sp"
+                                android:textColor="@color/text_color"/>
 
                             <TextView
                                 android:id="@+id/textViewLongitude"
@@ -292,7 +316,7 @@
                                 android:padding="5dp"
                                 android:text=""
                                 android:textSize="14sp"
-                                android:textStyle="bold" />
+                                 />
 
                         </LinearLayout>
 
@@ -301,7 +325,7 @@
                             android:layout_height="1dp"
                             android:layout_marginStart="5dp"
                             android:layout_marginEnd="5dp"
-                            android:background="#ccc" />
+                            android:background="#65CCCCCC" />
 
                     </LinearLayout>
 
@@ -313,20 +337,24 @@
                 android:id="@+id/mapLayout"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_weight="1"
-                android:background="@color/colorPrimary"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+
+                android:background="@drawable/background_enabled"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Show me on map"
+                    android:textSize="15dp"
+                    android:text="Show on Map"
                     android:textColor="#fff"
-                    android:textStyle="bold" />
+                     />
 
             </LinearLayout>
 
