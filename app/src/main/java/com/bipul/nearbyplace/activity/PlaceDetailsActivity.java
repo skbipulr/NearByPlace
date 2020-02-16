@@ -31,6 +31,8 @@ public class PlaceDetailsActivity extends AppCompatActivity {
     private LinearLayout linearLayoutShowOnMap;
     private LinearLayout linearLayoutShowDistanceOnMap;
 
+  //  private TextView textContentName;
+
     // variable
     private Results results;
     private double lat, lng;
@@ -77,6 +79,7 @@ public class PlaceDetailsActivity extends AppCompatActivity {
 
         textViewName.setText(results.getName());
         textViewAddress.setText(results.getVicinity());
+       // textContentName.setText(results.getName());
         // check if ratings is available for the place
         if (results.getRating() != null) {
             linearLayoutRating.setVisibility(View.VISIBLE);
@@ -124,5 +127,12 @@ public class PlaceDetailsActivity extends AppCompatActivity {
         textViewAddress = findViewById(R.id.textViewAddress);
         textViewAvailability = findViewById(R.id.textViewAvailability);
         ratingBar = findViewById(R.id.ratingBar);
+      //  textContentName = findViewById(R.id.contentNameTxt);
+    }
+
+    public void backPress(View view) {
+        onBackPressed();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        finish();
     }
 }

@@ -37,9 +37,9 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                return "Near By";
+                return "Near By Places";
             case 1:
-                return "My Location";
+                return "Device Location";
         }
         return null;
     }

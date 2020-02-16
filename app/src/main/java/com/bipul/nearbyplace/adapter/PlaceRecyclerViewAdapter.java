@@ -1,5 +1,6 @@
 package com.bipul.nearbyplace.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 
@@ -8,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -50,6 +52,9 @@ public class PlaceRecyclerViewAdapter extends RecyclerView.Adapter<PlaceRecycler
                 intent.putExtra("result", results);
                 intent.putExtra("lat", lat);
                 intent.putExtra("lng", lng);
+              /*  Activity activity = new Activity();
+                activity.overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+*/
                 context.startActivity(intent);
             }
         });
@@ -65,6 +70,8 @@ public class PlaceRecyclerViewAdapter extends RecyclerView.Adapter<PlaceRecycler
         public TextView name, address;
         public LinearLayout linearLayoutDetails;
         ImageView placeIV;
+        TextView textViewRating;
+        RatingBar ratingBar;
 
         public ViewHolder(View view) {
             super(view);
@@ -72,11 +79,17 @@ public class PlaceRecyclerViewAdapter extends RecyclerView.Adapter<PlaceRecycler
             address = view.findViewById(R.id.textViewAddress);
             linearLayoutDetails = view.findViewById(R.id.linearLayoutDetails);
             placeIV = view.findViewById(R.id.placeImageView);
+
+            textViewRating = view.findViewById(R.id.textViewRating);
+            ratingBar = view.findViewById(R.id.ratingBar);
         }
 
         public void bind(Results results) {
             name.setText(results.getName());
             address.setText(results.getVicinity());
+            textViewRating.setText(results.getRating());
+            ratingBar.setRating(Float.valueOf(results.getRating()));
+
         }
     }
 }
