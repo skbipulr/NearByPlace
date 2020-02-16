@@ -47,6 +47,9 @@ public class PlaceOnMapActivity extends FragmentActivity implements OnMapReadyCa
     private GoogleMap googleMap;
     private String type;
 
+    private static final int[] COLORS = new int[]{R.color.second_root_color, R.color.first_root_color, R.color.third_root_color, R.color.fbutton_color_green_sea, R.color.primary_dark_material_light};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -148,7 +151,7 @@ public class PlaceOnMapActivity extends FragmentActivity implements OnMapReadyCa
         String sensor = "sensor=false";
 
         // Building the parameters to the web service
-        String parameters = str_origin + "&" + str_dest + "&" + sensor + "&key=" + this.getResources().getString(R.string.google_api_key);
+        String parameters = str_origin + "&" + str_dest + "&" + sensor + "&key=" + this.getResources().getString(R.string.map_direction_polyLine_api_key);
 
         // Output format
         String output = "json";
@@ -265,6 +268,11 @@ public class PlaceOnMapActivity extends FragmentActivity implements OnMapReadyCa
             for (int i = 0; i < result.size(); i++) {
                 points = new ArrayList<>();
                 lineOptions = new PolylineOptions();
+
+                //In case of more than 5 alternative routes
+                int colorIndex = i % COLORS.length;
+                lineOptions.color(getResources().getColor(COLORS[colorIndex]));
+
 
                 // Fetching i-th route
                 List<HashMap<String, String>> path = result.get(i);

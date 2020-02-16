@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">NearByPlace</string>
     <string name="title_activity_maps">Map</string>
-    <string name="google_api_key">AIzaSyBDn7i6MRa64QaRGkjFwcG7Vyzy2rzwaJw</string>
+    <string name="google_api_key">AIzaSyB9MxxJBmzLHdfsMEZSdV0vORR_MRwirPI</string>
+    <string name="map_direction_polyLine_api_key">AIzaSyBg8i0hgKB-G08vlQtuGyjlns1RfwzDzoE</string>
 
     <string-array name="nearby_option">
 

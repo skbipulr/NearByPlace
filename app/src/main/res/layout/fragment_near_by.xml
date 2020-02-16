@@ -56,7 +56,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
-                        android:background="@drawable/backgroud_disable"
                         android:orientation="horizontal">
 
 
@@ -94,7 +93,9 @@
         android:layout_height="50dp"
         android:layout_margin="5dp"
         android:layout_marginTop="2dp"
-        android:background="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/background_enabled"
         android:gravity="center"
         android:orientation="horizontal"
         android:visibility="gone">

@@ -221,6 +221,8 @@ public class NearByFragment extends Fragment {
                 @Override
                 public void onResponse(Call<MyPlaces> call, Response<MyPlaces> response) {
                     //Log.d("MyPlaces", response.body().toString());
+
+
                     myPlaces = response.body();
                     Log.d("MyPlaces", myPlaces.getResults().get(0).toString());
 

@@ -8,4 +8,10 @@
     <color name="tabSelectedTextColor">#ffffff</color>
     <color name="tabIndicatorColor">#ffffff</color>
     <color name="text_color">#083D3D</color>
+
+
+    <color name="first_root_color">#F7E90C0C</color>
+    <color name="second_root_color">#1da1f2</color>
+    <color name="third_root_color">#595D5F</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
 </resources>
